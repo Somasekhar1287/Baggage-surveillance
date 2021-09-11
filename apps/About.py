@@ -6,6 +6,9 @@ Created on Sat Sep 11 11:51:33 2021
 """
 
 import streamlit as st
+import pandas as pd
 
 def app():
     st.title("About page")
+    data=pd.read_csv("https://github.com/Somasekhar1287/Baggage-surveillance/blob/master/BagTrack%20Report%20new.csv",encoding="ISO-8859-1")
+    data.head(20)
