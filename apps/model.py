@@ -47,7 +47,8 @@ def l2model():
 
 
 def l3model():
-    l3=pd.read_csv("C://Data//l3_operator_new.csv")
+    url="https://github.com/Somasekhar1287/airport-security/blob/master/l3_operator_new.csv"
+    l3=pd.read_csv(url)
     
     labelEnc=LabelEncoder()
     
