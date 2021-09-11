@@ -6,9 +6,10 @@ Created on Sat Sep 11 11:51:33 2021
 """
 
 import streamlit as st
-import pandas as pd
 
 def app():
     st.title("About page")
-    data=pd.read_csv("https://raw.githubusercontent.com/Somasekhar1287/Baggage-surveillance/master/BagTrack%20Report%20new.csv",encoding="ISO-8859-1")
-    st.write(data.head(20))
+    st.write(" Baggage surveillance analytics \n
+                1.Operator Performance
+                2.Overall operator performance
+             ")
