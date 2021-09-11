@@ -11,4 +11,4 @@ import pandas as pd
 def app():
     st.title("About page")
     data=pd.read_csv("https://raw.githubusercontent.com/Somasekhar1287/Baggage-surveillance/master/BagTrack%20Report%20new.csv",encoding="ISO-8859-1")
-    data.head(20)
+    st.write(data.head(20))
