@@ -26,7 +26,8 @@ from sklearn.linear_model import LogisticRegression
 
 
 def l2model():
-    l2=pd.read_csv("C://Data/l2_operator_new.csv")
+    url="https://github.com/Somasekhar1287/airport-security/blob/master/l2_operator_new.csv"
+    l2=pd.read_csv(url)
     
     
     labelEnc=LabelEncoder()
