@@ -9,7 +9,7 @@ import streamlit as st
 
 def app():
     st.title("About page")
-    st.write(" Baggage surveillance analytics \n
+    st.write(" Baggage surveillance analytics
                 1.Operator Performance
                 2.Overall operator performance
              ")
