@@ -20,8 +20,8 @@ def L3_model(loginid,decision,time):
     return prediction
 
 def app():
-    L2_operator=pd.read_csv("https://github.com/Somasekhar1287/airport-security/blob/master/l2_operator_new.csv")
-    L3_operator=pd.read_csv("https://github.com/Somasekhar1287/airport-security/blob/master/l3_operator_new.csv")
+    L2_operator=pd.read_csv("https://github.com/Somasekhar1287/airport-security/blob/master/l2_operator_new.csv",error_bad_lines=False)
+    L3_operator=pd.read_csv("https://github.com/Somasekhar1287/airport-security/blob/master/l3_operator_new.csv",error_bad_lines=False)
     
     l2_login_ids=L2_operator["L2LoginID"].unique().tolist()
     l2_login_ids.sort()
