@@ -10,12 +10,12 @@ import pandas as pd
 import pickle
 
 def L2_model(loginid,decision,time):
-    model=pickle.load(open("l2_mlr.pkl","rb"))
+    model=pickle.load(open("./l2_mlr.pkl","rb"))
     prediction=model.predict([[loginid,decision,time]])
     return prediction
 
 def L3_model(loginid,decision,time):
-    model=pickle.load(open("l3_mlr.pkl","rb"))
+    model=pickle.load(open("./l3_mlr.pkl","rb"))
     prediction=model.predict([[loginid,decision,time]])
     return prediction
 
