@@ -37,8 +37,8 @@ def plot2(df,x,title,x_title,y_title):
 
 def app():
     st.title("Overall Operator Performance")
-    l2=pd.read_csv("https://github.com/Somasekhar1287/airport-security/blob/master/l2_operator_new.csv")
-    l3=pd.read_csv("https://github.com/Somasekhar1287/airport-security/blob/master/l3_operator_new.csv")
+    l2=pd.read_csv("https://raw.githubusercontent.com/Somasekhar1287/Baggage-surveillance/master/l2_operator_new.csv")
+    l3=pd.read_csv("https://raw.githubusercontent.com/Somasekhar1287/Baggage-surveillance/master/l3_operator_new.csv")
     l2_loginId=l2["L2LoginID"].unique().tolist()
     l3_loginId=l3["L3LoginID"].unique().tolist()
     operator=st.sidebar.radio("Select Operator",("L2 operator","L3 operator") )
